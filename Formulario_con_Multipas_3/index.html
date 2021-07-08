@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Formulario Multi-Pasos :: Ing. Urian Viera</title>
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:400,100,300,500">
+        <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">
+		<link rel="stylesheet" href="assets/css/form-elements.css">
+        <link rel="stylesheet" href="assets/css/style.css">
+
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+    </head>
+    <body>
+
+        <div class="top-content">
+            <div class="container">
+                
+                <div class="row">
+                    <div class="col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3 form-box">
+                    	<form role="form" action="" method="post" class="f1">
+
+                    		<h3>Registrar Inmueble</h3>
+                    		<div class="f1-steps">
+                    			<div class="f1-progress">
+                    			    <div class="f1-progress-line" data-now-value="16.66" data-number-of-steps="3" style="width: 16.66%;"></div>
+                    			</div>
+                    			<div class="f1-step active">
+                    				<div class="f1-step-icon"><i class="fa fa-user"></i></div>
+                    				<p>Paso 1</p>
+                    			</div>
+                    			<div class="f1-step">
+                    				<div class="f1-step-icon"><i class="fa fa-key"></i></div>
+                    				<p>Paso 2</p>
+                    			</div>
+                    		    <div class="f1-step">
+                    				<div class="f1-step-icon"><i class="fa fa-twitter"></i></div>
+                    				<p>Fin</p>
+                    			</div>
+                    		</div>
+                    		
+                    		
+                            <!--paso 1 -->
+                            <fieldset>
+                                <br>
+                    			<div class="form-group">
+                    			    <label class="sr-only" for="f1-first-name">Nombre del Propietario</label>
+                                    <input type="text" name="f1-first-name" placeholder="Propietario" class="f1-first-name form-control" id="f1-first-name">
+                                </div>
+                                <div class="form-group">
+                                    <label class="sr-only" for="f1-last-name">Ubicación del Inmueble</label>
+                                    <input type="text" name="f1-last-name" placeholder="Ubicación del Inmueble" class="f1-last-name form-control" id="f1-last-name">
+                                </div>
+                                <div class="form-group">
+                                    <label class="sr-only" for="f1-about-yourself">Descripción del Inmueble</label>
+                                    <textarea name="f1-about-yourself" placeholder="Descripción del Inmueble" class="f1-about-yourself form-control" id="f1-about-yourself"></textarea>
+                                </div>
+                                <div class="f1-buttons">
+                                    <button type="button" class="btn btn-next">Siguiente</button>
+                                </div>
+                            </fieldset>
+                            <!--fin del paso 1 -->
+
+                            <!---paso 2 -->
+                            <fieldset>
+                                <br>
+                                <div class="form-group">
+                                    <label class="sr-only" for="f1-email">Correo del Propietario</label>
+                                    <input type="text" name="f1-email" placeholder="Correo del Propietario" class="f1-email form-control" id="f1-email">
+                                </div>
+                                <div class="form-group">
+                                    <label class="sr-only" for="f1-password">Ciudad donde está el Inmueble</label>
+                                    <input type="password" name="f1-password" placeholder="Valor de Inmueble" class="f1-password form-control" id="f1-password">
+                                </div>
+                                <div class="form-group">
+                                    <label class="sr-only" for="f1-repeat-password">Barrio donde está el Inmueble</label>
+                                    <input type="password" name="f1-repeat-password" placeholder="Barrio donde está el Inmueble" class="f1-repeat-password form-control" id="f1-repeat-password">
+                                </div>
+                                <div class="f1-buttons">
+                                    <button type="button" class="btn btn-previous">Atrás</button>
+                                    <button type="button" class="btn btn-next">Siguiente</button>
+                                </div>
+                            </fieldset>
+                            <!--fin del paso 2 -->
+
+                            <!--paso fin -->
+                            <fieldset>
+                                <br>
+                                <div class="form-group">
+                                    <label class="sr-only" for="f1-facebook">Valor de Inmueble</label>
+                                    <input type="text" name="f1-facebook" placeholder="Valor de Inmueble" class="f1-facebook form-control" id="f1-facebook">
+                                </div>
+                                <div class="form-group">
+                                    <label class="sr-only" for="f1-twitter">Porcentaje en Permutas</label>
+                                    <input type="text" name="f1-twitter" placeholder="Porcentaje en Permutas" class="f1-twitter form-control" id="f1-twitter">
+                                </div>
+                                <div class="form-group">
+                                    <label class="sr-only" for="f1-google-plus">Que te gustaria Intercambiar?</label>
+                                    <input type="text" name="f1-google-plus" placeholder="Que te gustaria Intercambiar?" class="f1-google-plus form-control" id="f1-google-plus">
+                                </div>
+                                <div class="f1-buttons">
+                                    <button type="button" class="btn btn-previous">Atrás</button>
+                                    <button type="submit" class="btn btn-submit">Guardar Información</button>
+                                </div>
+                            </fieldset>
+                            <!--fin -->
+                    	
+                    	</form>
+                    </div>
+                </div>
+                    
+            </div>
+        </div>
+
+
+        <!-- Javascript -->
+        <script src="assets/js/jquery-1.11.1.min.js"></script>
+        <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+        <script src="assets/js/jquery.backstretch.min.js"></script>
+        <script src="assets/js/retina-1.1.0.min.js"></script>
+        <script src="assets/js/scripts.js"></script>
+        
+        <!--[if lt IE 10]>
+            <script src="assets/js/placeholder.js"></script>
+        <![endif]-->
+
+    </body>
+
+</html>
