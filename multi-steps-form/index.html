@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Multi steps form</title>
+    <link rel="stylesheet" href="home.css" />
+  </head>
+  <body>
+    <div class="container">
+      <form id="form1">
+        <h3>Información de cuenta</h3>
+        <input type="text" placeholder="email" required />
+        <input type="password" placeholder="password" required />
+        <input type="password" placeholder="confirm password" required />
+        <div class="btn-box">
+          <button type="button" id="next1">Siguiente</button>
+        </div>
+      </form>
+
+      <form id="form2">
+        <h3>Links de redes</h3>
+        <input type="text" placeholder="Medium" />
+        <input type="text" placeholder="GitHub" />
+        <input type="text" placeholder="LinkedIn" />
+        <div class="btn-box">
+          <button type="button" id="back1">Atras</button>
+          <button type="button" id="next2">Siguiente</button>
+        </div>
+      </form>
+
+      <form id="form3">
+        <h3>Información personal</h3>
+        <input type="text" placeholder="First Name" required />
+        <input type="text" placeholder="Last Name" required />
+        <input type="number" placeholder="Mobile Ne" required />
+        <div class="btn-box">
+          <button type="button" id="back2">Atras</button>
+          <button type="submit">Enviar</button>
+        </div>
+      </form>
+
+      <div class="step-row">
+        <div id="progress"></div>
+        <div class="step-col"><small>Paso 1</small></div>
+        <div class="step-col"><small>Paso 2</small></div>
+        <div class="step-col"><small>Paso 3</small></div>
+      </div>
+    </div>
+
+    <script src="home.js"></script>
+  </body>
+</html>
